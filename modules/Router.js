@@ -5,8 +5,9 @@ import { createRoutes } from './RouteUtils'
 import RoutingContext from './RoutingContext'
 import useRoutes from './useRoutes'
 import { routes } from './PropTypes'
+import PropTypes from 'prop-types'
 
-const { func, object } = React.PropTypes
+const { func, object } = PropTypes
 
 /**
  * A <Router> is a high-level API for automatically setting up

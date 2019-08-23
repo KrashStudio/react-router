@@ -1,5 +1,5 @@
 {
-  "name": "react-router",
+  "name": "@krashstudio/react-router",
   "version": "1.0.3",
   "description": "A complete routing library for React.js",
   "files": [
@@ -10,14 +10,12 @@
     "npm-scripts",
     "umd"
   ],
-  "main": "lib/index",
+  "main": "es6/index",
   "jsnext:main": "es6/index",
   "repository": {
     "type": "git",
     "url": "https://github.com/rackt/react-router.git"
   },
-  "homepage": "https://rackt.github.io/react-router/",
-  "bugs": "https://github.com/rackt/react-router/issues",
   "scripts": {
     "build": "npm run build-cjs && npm run build-es6",
     "build-cjs": "rimraf lib && babel ./modules -d lib --ignore '__tests__'",
@@ -38,6 +36,7 @@
   "license": "MIT",
   "dependencies": {
     "invariant": "^2.0.0",
+    "prop-types": "^15.7.2",
     "warning": "^2.0.0"
   },
   "peerDependencies": {

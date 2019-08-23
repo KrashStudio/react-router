@@ -3,8 +3,9 @@ import React, { Component } from 'react'
 import { render, unmountComponentAtNode } from 'react-dom'
 import createHistory from 'history/lib/createMemoryHistory'
 import Router from '../Router'
+import PropTypes from 'prop-types'
 
-const { object } = React.PropTypes
+const { object } = PropTypes
 
 describe('a Route Component', function () {
 

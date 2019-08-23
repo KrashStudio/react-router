@@ -2,8 +2,9 @@ import invariant from 'invariant'
 import React, { Component } from 'react'
 import { isReactChildren } from './RouteUtils'
 import getRouteParams from './getRouteParams'
+import PropTypes from 'prop-types'
 
-const { array, func, object } = React.PropTypes
+const { array, func, object } = PropTypes
 
 /**
  * A <RoutingContext> renders the component tree for a given router state

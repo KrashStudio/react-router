@@ -1,10 +1,11 @@
 import invariant from 'invariant'
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { createRouteFromReactElement } from './RouteUtils'
 import { formatPattern } from './PatternUtils'
 import { falsy } from './PropTypes'
+import PropTypes from 'prop-types'
 
-const { string, object } = React.PropTypes
+const { string, object } = PropTypes
 
 /**
  * A <Redirect> is used to declare another URL path a client should

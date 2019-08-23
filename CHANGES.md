@@ -301,7 +301,7 @@ var Assignment = React.createClass({
 // via context
 var Assignment = React.createClass({
   contextTypes: {
-    location: React.PropTypes.object
+    location: PropTypes.object
   },
   foo () {
     this.context.location

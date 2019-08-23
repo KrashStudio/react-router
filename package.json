@@ -1,6 +1,6 @@
 {
   "name": "@krashstudio/react-router",
-  "version": "1.0.3",
+  "version": "1.0.3-fork1",
   "description": "A complete routing library for React.js",
   "files": [
     "*.md",
@@ -81,17 +81,5 @@
     "style-loader": "^0.12.4",
     "webpack": "^1.4.13",
     "webpack-dev-middleware": "^1.2.0"
-  },
-  "tags": [
-    "react",
-    "router"
-  ],
-  "keywords": [
-    "react",
-    "react-component",
-    "routing",
-    "route",
-    "routes",
-    "router"
-  ]
+  }
 }

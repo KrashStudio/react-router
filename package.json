@@ -14,7 +14,7 @@
   "jsnext:main": "es6/index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rackt/react-router.git"
+    "url": "https://github.com/KrashStudio/react-router.git"
   },
   "scripts": {
     "build": "npm run build-cjs && npm run build-es6",

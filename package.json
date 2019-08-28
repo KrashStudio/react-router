@@ -2,16 +2,8 @@
   "name": "@krashstudio/react-router",
   "version": "1.0.3-fork1",
   "description": "A complete routing library for React.js",
-  "files": [
-    "*.md",
-    "docs",
-    "es6",
-    "lib",
-    "npm-scripts",
-    "umd"
-  ],
-  "main": "es6/index",
-  "jsnext:main": "es6/index",
+  "main": "lib/index",
+  "module": "es6/index",
   "repository": {
     "type": "git",
     "url": "https://github.com/KrashStudio/react-router.git"
@@ -22,11 +14,6 @@
     "build-es6": "rimraf es6 && babel ./modules -d es6 --blacklist=es6.modules --ignore '__tests__'",
     "build-umd": "NODE_ENV=production webpack modules/index.js umd/ReactRouter.js",
     "build-min": "NODE_ENV=production webpack -p modules/index.js umd/ReactRouter.min.js",
-    "lint": "eslint modules examples",
-    "start": "node examples/server.js",
-    "test": "npm run lint && npm run test-node && npm run test-browser",
-    "test-browser": "karma start",
-    "test-node": "mocha --compilers js:babel-core/register tests.node.js",
     "postinstall": "node ./npm-scripts/postinstall.js"
   },
   "authors": [

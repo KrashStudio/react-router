@@ -1,6 +1,6 @@
 {
   "name": "@krashstudio/react-router",
-  "version": "1.0.3-fork2",
+  "version": "1.0.3-fork3",
   "description": "A complete routing library for React.js",
   "main": "lib/index",
   "module": "es6/index",

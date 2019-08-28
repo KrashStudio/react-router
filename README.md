@@ -1,6 +1,6 @@
 # @krashstudio/react-router
 
-This is fork of `react-router@1.0.3` to be compatible with `react@16.8.6` for legacy purpose
+This is a fork of `react-router@1.0.3` to be compatible with `react@16.8.6` for legacy purpose
 
 ## To publish this pacakge:
 

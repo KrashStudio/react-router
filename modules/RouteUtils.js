@@ -1,6 +1,4 @@
 import React from 'react'
-import warning from 'warning'
-import PropTypes from 'prop-types'
 
 function isValidChild(object) {
   return object == null || React.isValidElement(object)
@@ -10,20 +8,6 @@ export function isReactChildren(object) {
   return isValidChild(object) || (Array.isArray(object) && object.every(isValidChild))
 }
 
-function checkPropTypes(componentName, propTypes, props) {
-  componentName = componentName || 'UnknownComponent'
-
-  for (const propName in propTypes) {
-    if (propTypes.hasOwnProperty(propName)) {
-      const error = PropTypes.checkPropTypes(propTypes[propName], props, propName, componentName)
-
-      /* istanbul ignore if: error logging */
-      if (error instanceof Error)
-        warning(false, error.message)
-    }
-  }
-}
-
 function createRoute(defaultProps, props) {
   return { ...defaultProps, ...props }
 }
@@ -31,9 +15,6 @@ function createRoute(defaultProps, props) {
 export function createRouteFromReactElement(element) {
   const type = element.type
   const route = createRoute(type.defaultProps, element.props)
-
-  if (type.propTypes)
-    checkPropTypes(type.displayName || type.name, type.propTypes, route)
 
   if (route.children) {
     const childRoutes = createRoutesFromReactChildren(route.children, route)
